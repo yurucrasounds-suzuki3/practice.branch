@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Branch Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Branch Practice</h1>
+    <p class="lead">ブランチ切り替えの練習用に作ったシンプルな静的サイトです。</p>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>使い方</h2>
+      <ol>
+        <li>このリポジトリをローカルにクローンします。</li>
+        <li>ローカルサーバーを起動して `index.html` を表示します（下の README を参照）。</li>
+        <li>別ブランチを作ってファイルを編集し、コミット・切り替え・マージの練習をします。</li>
+      </ol>
+    </section>
+
+    <section id="exercises">
+      <h2>練習メニュー</h2>
+      <button id="showTasks">練習タスクを表示</button>
+      <div id="tasks" class="hidden">
+        <h3>例 — ブランチ練習</h3>
+        <ol>
+          <li>main　
+             ブランチから新しいブランチを作成してチェックアウト</li>
+          <li>ファイルを編集してコミット</li>
+          <li>main に戻って変更をマージ</li>
+          <li>不要ならブランチを削除</li>
+        </ol>
+        <pre class="cmd"># 例
+# git switch -c feature/my-change
+# edit files
+# git add .
+# git commit -m "Add my change"
+# git switch main
+# git merge feature/my-change
+# git branch -d feature/my-change</pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>作成者: practice.branch — ブランチ練習用</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
